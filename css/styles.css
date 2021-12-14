@@ -1,3 +1,44 @@
 body {
 	font-family: Helvetica;
 }
+.navbar {
+  overflow: hidden;
+  background-color: #e4e4e4e4;
+  position: fixed; 
+  top: 0; 
+  width: 100%; 
+  height: 10%;
+  right: 0px;
+  font-size: 18px;
+  margin-bottom: 2px;
+}
+.navbar a {
+  float: left;
+  display: block;
+  text-align: center;
+  /*padding: 10px 2px;*/
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  position: relative;
+  color: black;
+}
+a.navbarSuitcase {
+	float: right;
+}
+img.booneIcon {
+	height: 70px;
+	margin-left: 15px;
+}
+img.suitcaseIcon {
+	height: 60px;
+	margin-right: 60px;
+}
+.main {
+  margin-top: 90px;
+}
+body {
+  background-color: #808080;
+  color: white;
+}
