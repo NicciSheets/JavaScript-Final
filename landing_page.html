@@ -4,7 +4,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="css/styles.css" type="text/css" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
 <style>
 .hero_image {
 	background: url(images/drawdy_falls2.jpg) no-repeat center; 
@@ -56,8 +55,37 @@ a:link, a:visited {
 
  <script>
    //jQuery anonymous function with hide() and fadeIn() methods
-     $(function() {  //shorthand for the $(document).ready() method
-     $('div#hero-buttons').hide().fadeIn(5000);  //selects the div element w/hero-buttons id, hides it and then fades it in
-     });
+     // $(function() {  //shorthand for the $(document).ready() method
+      // $('div#hero-buttons').hide().fadeIn(5000);  //selects the div element w/hero-buttons id, hides it and then fades it in
+     // });
+/*
+     if (window.performance) {
+        console.info("window.performance works fine on this browser");
+      }
+      console.info(performance.navigation.type);
+      if (performance.navigation.type == performance.navigation.TYPE_RELOAD) {
+        console.info( "This page is reloaded" );
+      } 
+      else if (performance.navigation.type == performance.navigation.TYPE_BACK_FORWARD) {
+        console.info("This page was accessed by navigating through history");
+      }
+      else {
+        $('div#hero-buttons').hide().fadeIn(5000);  //selects the div element w/hero-buttons id, hides it and then fades it in
+        console.info( "This page is not reloaded");
+      }
+*/  /*
+        $("a").click(function() {
+          console.info("got here through a link");
+          $('div#hero-buttons').show();
+        });
+        */
+
+       if (console.info() == "got here through a link") {
+          $('div#hero-buttons').hide().fadeIn(5000);  //selects the div element w/hero-buttons id, hides it and then fades it in
+       }
+       else {
+        $('div#hero-buttons').show();
+       }
+
  </script>
 </body>
