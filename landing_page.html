@@ -3,6 +3,8 @@
 <title>Boone County, WV</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="css/styles.css" type="text/css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 <style>
 .hero_image {
 	background: url(images/drawdy_falls2.jpg) no-repeat center; 
@@ -46,12 +48,16 @@ a:link, a:visited {
 <div class="hero_image">
  <div class="hero-text">
     <h1 style="font-size:60px">Discover Boone County</h1>
-    <h1>"Gateway to the Coalfields"</h1>
+    <h1 id="slogan">"Gateway to the Coalfields"</h1>
  </div>
- <div class="hero-buttons">
+ <div class="hero-buttons" id="hero-buttons">
       <a href="thingsToDo.html">Things to Do</a><a href="placesToEat.html">Places to Eat</a><a href="whereToStay.html">Where to Stay</a>
  </div>
-</div>
 
-
+ <script>
+   //jQuery anonymous function with hide() and fadeIn() methods
+     $(function() {  //shorthand for the $(document).ready() method
+     $('div#hero-buttons').hide().fadeIn(5000);  //selects the div element w/hero-buttons id, hides it and then fades it in
+     });
+ </script>
 </body>

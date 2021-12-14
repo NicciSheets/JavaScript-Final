@@ -16,7 +16,7 @@ body {
   float: left;
   display: block;
   text-align: center;
-  /*padding: 10px 2px;*/
+  padding: 14px 16px;
   text-decoration: none;
   position: absolute;
   top: 50%;
@@ -24,8 +24,12 @@ body {
   position: relative;
   color: black;
 }
-a.navbarSuitcase {
+a.suitcaseNavBar {
 	float: right;
+	margin-left: -30px;
+}
+a.booneNavBar {
+	margin-left: -30px;
 }
 img.booneIcon {
 	height: 70px;
@@ -41,4 +45,7 @@ img.suitcaseIcon {
 body {
   background-color: #808080;
   color: white;
+}
+a.stayNavBar:hover, a.doNavBar:hover, a.eatNavBar:hover, a.booneNavBar:hover, a.suitcaseNavBar:hover {
+	text-shadow: 0px 0px 0.75px #000000;
 }
